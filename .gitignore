@@ -1,0 +1,23 @@
+# ===== 编译产物 =====
+# 约定：编译输出统一放 build/，例如
+#   mkdir -p build && gcc hello.c -o build/hello -Wall -g
+build/
+*.o
+*.obj
+*.out
+*.exe
+a.out
+
+# 无扩展名的可执行文件（Linux 不给二进制加后缀，规则抓不住）
+# 若某个产物没被上面的规则覆盖，把它的路径写到下面
+# 例：01_basics/hello
+
+# ===== 编辑器 / IDE =====
+.vscode/
+.idea/
+*.swp
+*~
+
+# ===== 系统 =====
+.DS_Store
+Thumbs.db
